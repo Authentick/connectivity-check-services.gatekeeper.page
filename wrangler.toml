@@ -2,5 +2,5 @@ name = "connectivity-check"
 type = "javascript"
 account_id = "8724fe10846ce87d7849f1d7651845b2"
 workers_dev = true
-route = "connectivity-check.services.gatekeeper.page"
+route = "connectivity-check-services.gatekeeper.page"
 zone_id = "310b603f43ecd9b9835cc9b1f674dc12"
