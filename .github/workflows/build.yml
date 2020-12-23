@@ -21,7 +21,3 @@ jobs:
       run: dotnet restore ConnectivityCheck/ConnectivityCheck.csproj
     - name: Build
       run: dotnet build --configuration Release ConnectivityCheck/ConnectivityCheck.csproj
-      with:
-        directory: TestResults/
-        fail_ci_if_error: true
-        verbose: true
