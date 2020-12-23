@@ -7,8 +7,8 @@ async function gatherResponse(response, challenge) {
   const { headers } = response
   const contentType = headers.get('content-type') || ''
   if (contentType.includes('application/json')) {
-    const json = JSON.stringify(await response.json())
-    return json['Challenge'] == challenge
+    const json = await response.json()
+    return json['challenge'].toLowerCase() == challenge.toLowerCase()
   }
 
   return false
