@@ -24,7 +24,6 @@ namespace ConnectivityCheck.Controllers
         {
             Uri uri;
             bool uriIsValid = Uri.TryCreate("http://" + challengeRequest.PublicHostname + "/api/connectivity-check?challenge=" + challengeRequest.Challenge, UriKind.Absolute, out uri);
-            uri = new Uri("https://speed.hetzner.de/10GB.bin");
 
             if (uriIsValid)
             {
